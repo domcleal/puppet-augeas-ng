@@ -1,0 +1,4 @@
+* Sun Dec  4 2011 Dominic Cleal <dcleal@redhat.com> - 0.0.1
+- Initial release
+- Includes augeas type and provider from puppet master (2.8.x)
+- Includes spec from ticket 7592
