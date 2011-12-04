@@ -30,22 +30,23 @@ features.
   * On Debian, use Augeas and libaugeas-ruby\* from main repo, or backports if
     available.  Ensure you use the correct libaugeas-ruby1.8, 1.9 or 1.9.1
     package for your version of Ruby.
-  * On Ubuntu, as with Debian.  Also see [https://launchpad.net/~raphink/+archive/augeas/+packages](raphink's PPA repo)
+  * On Ubuntu, as with Debian.  Also see [raphink's PPA repo](https://launchpad.net/~raphink/+archive/augeas/+packages)
     for fresh Augeas packages.
 
 ## Merged changes
 
 The following changes are already merged in development or new versions of
 Puppet and are included here too:
-  * [http://projects.puppetlabs.com/issues/6494](#6494):
+
+  * [#6494](http://projects.puppetlabs.com/issues/6494):
     New commands, defvar, defnode, mv and setm (in 2.7.0)
-  * [http://projects.puppetlabs.com/issues/2728](#2728):
+  * [#2728](http://projects.puppetlabs.com/issues/2728):
     Add diff output for changes made by Augeas provider (in 2.7.3)
-  * [http://projects.puppetlabs.com/issues/2744](#2744):
+  * [#2744](http://projects.puppetlabs.com/issues/2744):
     Display file diffs through the Puppet log system (in 2.7.8)
-  * [http://projects.puppetlabs.com/issues/7285](#7285):
+  * [#7285](http://projects.puppetlabs.com/issues/7285):
     Use Augeas NO\_LOAD/incl to optimise loading based on context (in 2.8)
-  * [http://projects.puppetlabs.com/issues/5606](#5606):
+  * [#5606](http://projects.puppetlabs.com/issues/5606):
     Print Augeas' /augeas//error info to debug on save failure (in 2.8)
 
 ## Providers
