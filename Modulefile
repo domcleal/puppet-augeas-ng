@@ -1,0 +1,8 @@
+name    'domcleal-augeasng'
+version '0.0.1'
+source 'git://github.com/domcleal/puppet-augeas-ng'
+author 'domcleal'
+license 'Apache 2.0'
+summary 'Next generation Puppet-Augeas integration'
+description 'This module is a development ground for the Augeas provider in Puppet.'
+project_page 'http://github.com/domcleal/puppet-augeas-ng'
