@@ -6,12 +6,47 @@ existing versions of Puppet.
 
 ## Using puppet-augeas-ng
 
-A new resource type will be provided, similar to the existing `augeas` type but
-will add new features.
+A new resource type will be provided, identical to the existing `augeas` type
+but will add new features via providers.
 
 Change existing resource types from `augeas` to `augeasng` to take advantage of
 the new providers.  The type parameters are all backwards-compatible, no more
 changes are required.
+
+## Requirements
+
+Ensure both Augeas and ruby-augeas bindings are installed and working as normal.
+
+See the providers section below for specific requirements.  Generally use the
+latest version possible to get the most out of this module and enable all
+features.
+
+  * On RHEL 4, 5 and derivatives, use EPEL versions of Augeas and ruby-augeas
+  * On RHEL 6 and derivatives, use Augeas from main and optional channels,
+    ruby-augeas from EPEL.  This may not be the latest version, do check beta
+    channels too (e.g. RHEL 6.2).
+  * On Fedora, use Augeas and ruby-augeas from main updates repo.  Consider
+    checking updates-testing.
+  * On Debian, use Augeas and libaugeas-ruby\* from main repo, or backports if
+    available.  Ensure you use the correct libaugeas-ruby1.8, 1.9 or 1.9.1
+    package for your version of Ruby.
+  * On Ubuntu, as with Debian.  Also see [https://launchpad.net/~raphink/+archive/augeas/+packages](raphink's PPA repo)
+    for fresh Augeas packages.
+
+## Merged changes
+
+The following changes are already merged in development or new versions of
+Puppet and are included here too:
+  * [http://projects.puppetlabs.com/issues/6494](#6494):
+    New commands, defvar, defnode, mv and setm (in 2.7.0)
+  * [http://projects.puppetlabs.com/issues/2728](#2728):
+    Add diff output for changes made by Augeas provider (in 2.7.3)
+  * [http://projects.puppetlabs.com/issues/2744](#2744):
+    Display file diffs through the Puppet log system (in 2.7.8)
+  * [http://projects.puppetlabs.com/issues/7285](#7285):
+    Use Augeas NO\_LOAD/incl to optimise loading based on context (in 2.8)
+  * [http://projects.puppetlabs.com/issues/5606](#5606):
+    Print Augeas' /augeas//error info to debug on save failure (in 2.8)
 
 ## Providers
 
